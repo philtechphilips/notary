@@ -63,9 +63,9 @@
                 </div>
             </div>
         </div>
-        <div class="w-full swiper">
-            <div class="w-full flex justify-center mt-16 md:gap-10 gap-5 swiper-wrapper">
-                <div class="bg-[#F1F2F3] rounded-lg md:w-[400px] swiper-slide">
+        <div class="swiper mt-16">
+            <div class="swiper-wrapper">
+                <div class="bg-[#F1F2F3] rounded-lg md:w-[320px] swiper-slide">
                     <img src="{{ asset('images/image 10.png') }}" class="rounded-t-lg">
                     <div class="mt-6 px-5 pb-8">
                         <h1 class="text-2xl text-[#1D1F21]">
@@ -82,7 +82,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#F1F2F3] rounded-lg md:w-[400px] swiper-slide">
+                <div class="bg-[#F1F2F3] rounded-lg md:w-[320px] swiper-slide">
                     <img src="{{ asset('images/image 10.png') }}" class="rounded-t-lg">
                     <div class="mt-6 px-5 pb-8">
                         <h1 class="text-2xl text-[#1D1F21]">
@@ -100,7 +100,7 @@
                 </div>
 
 
-                <div class="bg-[#F1F2F3] rounded-lg md:w-[400px] swiper-slide">
+                <div class="bg-[#F1F2F3] rounded-lg md:w-[320px] swiper-slide">
                     <img src="{{ asset('images/image 10.png') }}" class="rounded-t-lg">
                     <div class="mt-6 px-5 pb-8">
                         <h1 class="text-2xl text-[#1D1F21]">
@@ -117,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="bg-[#F1F2F3] rounded-lg md:w-[400px] swiper-slide">
+                <div class="bg-[#F1F2F3] rounded-lg md:w-[320px] swiper-slide">
                     <img src="{{ asset('images/image 10.png') }}" class="rounded-t-lg">
                     <div class="mt-6 px-5 pb-8">
                         <h1 class="text-2xl text-[#1D1F21]">
@@ -233,7 +233,8 @@
         const swiper = new Swiper('.swiper', {
             direction: 'horizontal',
             loop: true,
-            centeredSlides: false,
+            spaceBetween: 30,
+            slidesPerView: 3,
             navigation: {
                 nextEl: '.swiper-button-next-mod',
                 prevEl: '.swiper-button-prev-mod',
@@ -259,7 +260,14 @@
                 nextEl: '.swiper-button-next-mod-1',
                 prevEl: '.swiper-button-prev-mod-1',
             },
-
+            breakpoints: {
+                300: {
+                    slidesPerView: 1,
+                },
+                640: {
+                    slidesPerView: 3
+                }
+            }
         });
     </script>
     {{-- Swiper js --}}
