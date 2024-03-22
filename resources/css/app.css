@@ -19,6 +19,9 @@ body{
     padding: 0px 0px;
 }
 
+.swiper-slide{
+    width: 400px !important;
+}
 
 @keyframes fade {
     from {
