@@ -8,3 +8,30 @@
 body{
     font-family: "Archivo", "Inter", Arial, Helvetica, sans-serif !important;
 }
+
+/*
+.button {
+    position: relative;
+}
+
+.arrow {
+    bottom: 0px;
+    transition: transform 0.3s ease;
+}
+
+.button:hover .arrow {
+    transform: translateY(-100%);
+    animation: returnFromTop 3s ease forwards;
+}
+
+@keyframes returnFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+} */

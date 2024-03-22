@@ -1,4 +1,4 @@
-<footer class="w-full bg-[#121212] md:px-20 px-5 pt-20 pb-6">
+<footer class="w-full bg-[#121212] md:px-20 px-5 pt-20 pb-6 flex flex-col justify-center">
     <div class="flex flex-col md:flex-row gap-5 items-start justify-between">
         <div class="flex flex-col gap-6 md:w-96">
             <h1 class="text-white font-bold text-xl font-[Inter]">NOTARY</h1>

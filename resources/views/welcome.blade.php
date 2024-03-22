@@ -1,16 +1,82 @@
-@extends("layout.app")
+@extends('layout.app')
 
-@section("content")
-<section class="hero w-full h-screen px-20 flex justify-center relative">
+@section('content')
+    <section class="hero w-full md:px-20 px-5 flex justify-center relative py-28 pb-40">
 
-<div class="w-full h-screen bg-black bg-opacity-50 absolute top-0 left-0"></div>
-</section>
+        <div class="md:w-[800px] z-[100] flex flex-col justify-center items-center">
+            <h1 class="md:text-[80px] text-[44px] text-center z-[100] font-bold md:font-[Inter] text-white">Seamless Notary
+                and Legal Services
+            </h1>
+            <p class="text-white md:text-2xl text-center">Discover efficiency, security, and convenience with our e-notary
+                services. From general notarization to specialized loan and mortgage documents, our expert team ensures
+                seamless transactions, in-person or online.
+            </p>
 
+            <a href=""
+                class="button text-white text-lg mt-12 bg-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-3 w-fit">
+                <p>Book appointment</p>
+                <img class="arrow bg-[#E1B284] rounded-full p-2" src="{{ asset('images/arrow-right.svg') }}" class="">
+            </a>
+        </div>
+        <div class="w-full h-screen bg-black bg-opacity-50 absolute top-0 left-0"></div>
+    </section>
+
+    <section class="md:px-20 px-5 py-16">
+        <div class="bg-[#004D80] rounded-lg md:p-20 px-5 py-10  flex flex-col items-center gap-5">
+            <h1 class="font-[Inter] text-white md:text-5xl text-3xl font-semibold">About Us</h1>
+            <p class="text-white md:text-lg text-center">At [Company Name], we're dedicated to simplifying your notary and
+                legal needs. With [number] years of experience in the industry, we've built a reputation for excellence and
+                reliability. Our team of experienced professionals is committed to providing personalized service and
+                guiding you through every step of the process with integrity and professionalism. Whether you're closing a
+                real estate deal, finalizing a loan agreement, or seeking expert legal advice, you can trust [Company Name]
+                to deliver exceptional results. </p>
+            <a href="" class="button text-[#CD7F32] flex items-center gap-2  w-fit">
+                <p>About us</p>
+                <img class="arrow" src="{{ asset('images/arrow-right-orange.svg') }}" class="">
+            </a>
+        </div>
+    </section>
+
+
+    <section class="bg-[#004D80] md:px-20 px-5 py-28">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-end">
+            <div class="flex flex-col gap-2 md:w-[724px]">
+                <h1 class="text-white md:text-[60px] text-5xl font-semibold md:text-left text-center md:text-left text-center">Why choose us</h1>
+                <p class="text-white md:text-[19px] font-light md:text-left text-center md:text-left text-center">we pride ourselves on being your trusted partner for all your
+                    notary and legal service needs. With our commitment to excellence, attention to detail, and dedication
+                    to client satisfaction, we stand out as the preferred choice.</p>
+            </div>
+
+            <a href=""
+                class="button text-white text-lg mt-12 bg-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-3 w-fit">
+                <p>Book appointment</p>
+                <img class="arrow bg-[#E1B284] rounded-full p-2" src="{{ asset('images/arrow-right.svg') }}" class="">
+            </a>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center gap-5 justify-between mt-20">
+            <div class="flex flex-col text-white gap-3 w-[360px]">
+                <h4 class="text-2xl text-center md:text-left">Experience and Expertise</h4>
+                <p class=" text-center md:text-left">Benefit from our years of industry experience and knowledgeable team of notaries and legal professionals who ensure precision and accuracy in every service.</p>
+            </div>
+                <img src="{{ asset("images/Line 13.png") }}" class="h-4 md:h-full">
+            <div class="flex flex-col text-white gap-3 w-[360px]">
+                <h4 class="text-2xl text-center md:text-left">Comprehensive & Convenience</h4>
+                <p class=" text-center md:text-left">
+                    Enjoy a wide range of services tailored to your needs, including notary services, legal advice, and assistance with financial documents, all delivered promptly and securely, with the convenience of online options.
+                </p>
+            </div>
+            <img src="{{ asset("images/Line 13.png") }}" class="h-4 md:h-full">
+            <div class="flex flex-col text-white gap-3 w-[360px]">
+                <h4 class="text-2xl text-center md:text-left">Client-Centric Approach</h4>
+                <p class=" text-center md:text-left">
+                    Experience personalized attention, transparent communication, and a commitment to your satisfaction, backed by our trusted reputation for excellence, reliability, and integrity in the industry.
+                </p>
+            </div>
+        </div>
+    </section>
 @endsection
 
 
-@section("script")
-
-
+@section('script')
 @endsection
-
