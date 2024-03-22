@@ -1,6 +1,7 @@
 @extends('layout.app')
 
 @section('content')
+    {{-- Hero Section --}}
     <section class="hero w-full md:px-20 px-5 flex justify-center relative py-28 pb-40">
 
         <div class="md:w-[800px] z-[100] flex flex-col justify-center items-center">
@@ -20,7 +21,9 @@
         </div>
         <div class="w-full h-screen bg-black bg-opacity-50 absolute top-0 left-0"></div>
     </section>
+    {{-- Hero Section --}}
 
+    {{-- About Us Section --}}
     <section class="md:px-20 px-5 py-16">
         <div class="bg-[#004D80] rounded-lg md:p-20 px-5 py-10  flex flex-col items-center gap-5">
             <h1 class="font-[Inter] text-white md:text-5xl text-3xl font-semibold">About Us</h1>
@@ -36,8 +39,9 @@
             </a>
         </div>
     </section>
+    {{-- About Us Section --}}
 
-
+    {{-- Services Section --}}
     <section class="md:px-20 px-5 py-16">
         <div class="flex flex-col md:flex-row justify-between items-end">
             <div class="md:w-[542px]">
@@ -130,13 +134,11 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class=""></div>
-            <div class="swiper-button-next"></div> --}}
         </div>
     </section>
+    {{-- Services Section --}}
 
-
-
+    {{-- Why Choose us Section --}}
     <section class="bg-[#004D80] md:px-20 px-5 py-28">
         <div class="flex flex-col md:flex-row justify-between items-center md:items-end">
             <div class="flex flex-col gap-2 md:w-[724px]">
@@ -180,7 +182,13 @@
             </div>
         </div>
     </section>
+    {{-- Why Choose us Section --}}
 
+    {{-- Testimonial Section --}}
+    @include('includes.testimonial')
+    {{-- Testimonial Section --}}
+
+    {{-- FAQs  --}}
     <section class="md:p-20 py-16 px-5">
         <h1 class="md:w-[500px] font-[Inter] md:text-6xl text-3xl font-semibold">Frequently ask questions</h1>
         <div class="border-b border-b-[#C9CCCF] mt-16 pb-12 accordion">
@@ -216,6 +224,7 @@
             </div>
         </div>
     </section>
+    {{-- FAQs  --}}
 @endsection
 
 @section('script')

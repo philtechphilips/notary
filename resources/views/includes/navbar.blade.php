@@ -3,7 +3,7 @@
 
     <div class="md:flex items-center gap-1 hidden">
         <a href="/services" class="text-lg font-medium text-[#1D1F21] hover:text-[#CD7F32]">Services</a>
-        <i class="ri-arrow-down-s-line cursor-pointer text-2xl"  onclick="toggleDropdown()"></i>
+        <i class="ri-arrow-down-s-line cursor-pointer text-2xl" onclick="toggleDropdown()"></i>
     </div>
 
     <ul class="hidden md:flex items-center gap-6">
@@ -15,7 +15,8 @@
     <a href="tel:+14169538776" class="text-lg text-[#CD7F32] font-medium hidden md:flex">+1 416-953-8776</a>
     <i class="ri-menu-2-line text-[34px] flex md:hidden"></i>
 </nav>
-<div id="service_dropdown" class="w-full gap-20 service-hidden bg-white px-12 py-10 hidden md:flex justify-center items-start absolute top-[105px] z-[1000]">
+<div id="service_dropdown"
+    class="w-full gap-20 service-hidden bg-white px-12 py-10 hidden md:flex justify-center items-start absolute top-[105px] z-[1000]">
     <div class="w-[284px]">
         <h1 class="text-[#121212] text-4xl font-[Inter] font-medium">Services</h1>
         <p class="mt-2 text-[#5F666D]">Lorem ipsum dolor sit amet consectetur. Morbi urna orci integer vel. Senectus leo
