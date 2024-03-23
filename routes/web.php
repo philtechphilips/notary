@@ -26,3 +26,11 @@ Route::get('/teams', function () {
     return view("teams");
 });
 
+Route::get('/contacts', function () {
+    return view("contact");
+});
+
+
+Route::get('/about-us', function () {
+    return view("about");
+});
