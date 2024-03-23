@@ -19,7 +19,7 @@
                 <img class="arrow bg-[#E1B284] rounded-full p-2" src="{{ asset('images/arrow-right.svg') }}" class="">
             </a>
         </div>
-        <div class="w-full h-screen bg-black bg-opacity-50 absolute top-0 left-0"></div>
+        <div class="w-full h-full bg-black bg-opacity-50 absolute top-0 left-0"></div>
     </section>
     {{-- Hero Section --}}
 
@@ -234,7 +234,7 @@
             direction: 'horizontal',
             loop: true,
             spaceBetween: 30,
-            slidesPerView: 3,
+            slidesPerView: 1,
             navigation: {
                 nextEl: '.swiper-button-next-mod',
                 prevEl: '.swiper-button-prev-mod',
@@ -249,37 +249,6 @@
             }
         });
     </script>
-
-
-    <script>
-        const swipers = new Swiper('.swiper-2', {
-            direction: 'horizontal',
-            loop: true,
-            slidesPerView: 3,
-            navigation: {
-                nextEl: '.swiper-button-next-mod-1',
-                prevEl: '.swiper-button-prev-mod-1',
-            },
-            breakpoints: {
-                300: {
-                    slidesPerView: 1,
-                },
-                640: {
-                    slidesPerView: 3
-                }
-            }
-        });
-    </script>
     {{-- Swiper js --}}
-    <!-- Accordion Script -->
-    <script>
-        const accordions = document.getElementsByClassName("accordion");
 
-        for (let i = 0; i < accordions.length; i++) {
-            accordions[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-            });
-        }
-    </script>
-    <!-- Accordion script Ends Here -->
 @endsection

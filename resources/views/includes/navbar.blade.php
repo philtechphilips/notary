@@ -8,8 +8,8 @@
 
     <ul class="hidden md:flex items-center gap-6">
         <li><a href="/about-us" class="text-lg font-medium text-[#1D1F21] hover:text-[#CD7F32]">About Us</a></li>
-        <li><a href="/about-us" class="text-lg font-medium text-[#1D1F21] hover:text-[#CD7F32]">Team and Career</a></li>
-        <li><a href="/about-us" class="text-lg font-medium text-[#1D1F21] hover:text-[#CD7F32]">Contacts</a></li>
+        <li><a href="/teams" class="text-lg font-medium text-[#1D1F21] hover:text-[#CD7F32]">Team and Career</a></li>
+        <li><a href="/contacts" class="text-lg font-medium text-[#1D1F21] hover:text-[#CD7F32]">Contacts</a></li>
     </ul>
 
     <a href="tel:+14169538776" class="text-lg text-[#CD7F32] font-medium hidden md:flex">+1 416-953-8776</a>
