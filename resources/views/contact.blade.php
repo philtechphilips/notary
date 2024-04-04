@@ -70,12 +70,13 @@
     <section class="w-full md:px-20 px-5 mb-28">
         <div class="w-full flex md:flex-row flex-col gap-12">
             <div class="md:w-1/2">
-                <form class="bg-white md:p-8 py-8 px-4 rounded-lg w-full">
+                <form class="bg-white md:p-8 py-8 px-4 rounded-lg w-full" method="POST" action="/online-upload">
+                    @csrf
                     <h1 class="text-[#1D1F21] text-2xl font-semibold">Online notorization</h1>
 
                     <label for="doc-upload" class="cursor-pointer">
-                        <input type="file" name="" id="doc-upload" hidden>
-                        <div
+                        <input type="file" multiple name="" id="doc-upload" hidden>
+                        <div id="drop-area"
                             class="border-2 border-[#E4E5E7] bg-[#F9F9F9] border-dashed rounded-lg gap-6 my-8 flex flex-col items-center justify-center py-28">
                             <h1 class="text-[#121212]">Upload your document</h1>
                             <img src="{{ asset('images/upload-icon.svg') }}" class="w-10" alt="">
@@ -91,7 +92,15 @@
                         </div>
                     </label>
 
-                    <button type="submit" class="buttons text-white text-lg mt-8 bg-transparent border-2 border-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-4 pr-10 w-fit">
+                    <div class="flex flex-col gap-3">
+                        <h6 class="font-semibold text-gray-800 hidden" id="uploaded-title">Files Uploaded</h6>
+                        <div class="flex gap-2 items-center">
+                            <div id="fileNamesContainer" style="display: none;"></div>
+                        </div>
+                    </div>
+
+                    <button type="submit"
+                        class="buttons text-white text-lg mt-8 bg-transparent border-2 border-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-4 pr-10 w-fit">
                         <p class="text-[#CD7F32] font-semibold">Send document</p>
                         <img class="arrow-one" src="{{ asset('images/icon-orange.svg') }}" class="">
                         <img class="arrow-two" src="{{ asset('images/icon-orange.svg') }}" class="">
@@ -100,36 +109,55 @@
             </div>
 
             <div class="md:w-1/2">
-                <form class="bg-white md:p-8 py-8 px-4 rounded-lg w-full">
+                <form method="POST" id="send-a-message" action="/send-a-message"
+                    class="bg-white md:p-8 py-8 px-4 rounded-lg w-full">
+                    @csrf
                     <h1 class="text-[#1D1F21] text-2xl font-semibold mb-8">Send a message</h1>
                     <div class="mb-8">
-                        <input type="text" placeholder="Your name"
+                        <input type="text" name="name" placeholder="Your name"
                             class="rounded-lg outline-none border-none w-full px-4 py-3 bg-[#F9F9F9]">
                     </div>
 
                     <div class="mb-8">
-                        <input type="text" placeholder="Contact"
+                        <input type="text" name="contact" placeholder="Contact"
                             class="rounded-lg outline-none border-none w-full px-4 py-3 bg-[#F9F9F9]">
                     </div>
 
                     <div class="mb-8">
-                        <input type="email" placeholder="Enter your mail"
+                        <input type="email" name="email" placeholder="Enter your mail"
                             class="rounded-lg outline-none border-none w-full px-4 py-3 bg-[#F9F9F9]">
                     </div>
 
                     <div class="mb-8">
-                        <select class="rounded-lg outline-none border-none w-full px-4 py-3 bg-[#F9F9F9]">
+                        <select name="service" class="rounded-lg outline-none border-none w-full px-4 py-3 bg-[#F9F9F9]">
                             <option selected disabled>Select service</option>
-                            <option>Notary</option>
+                            <option value="E-notary services">E-notary services</option>
+                            <option value="Notarization of documents">Notarization of documents</option>
+                            <option value="Wills and estate planning">Wills and estate planning</option>
+                            <option value="Affidavit preparation">Affidavit preparation</option>
+                            <option value="Commissioner of oaths">Commissioner of oaths</option>
+                            <option value="Free document printing">Free document printing</option>
+                            <option value="Common law statutory declarations">Common law statutory declarations</option>
+                            <option value="Custody declaration">Custody declaration</option>
+                            <option value="Subsidy applications">Subsidy applications</option>
+                            <option value="Statutory declarations of marital status">Statutory declarations of marital
+                                status</option>
+                            <option value="Proof of loss document">Proof of loss document</option>
+                            <option value="Letter of invitations">Letter of invitations</option>
+                            <option value="Travel consent letter">Travel consent letter</option>
+                            <option value="Statutory declaration to change name">Statutory declaration to change name
+                            </option>
+                            <option value="Witnessing signatures">Witnessing signatures</option>
+                            <option value="Certified true copies">Certified true copies</option>
                         </select>
                     </div>
 
                     <div class="mb-8">
-                        <textarea placeholder="Type message" rows="4"
+                        <textarea name="messages" placeholder="Type message" rows="4"
                             class="rounded-lg outline-none border-none w-full px-4 py-3 bg-[#F9F9F9]"></textarea>
                     </div>
 
-                    <button type="submit"
+                    <button id="send-btn" type="submit"
                         class="buttons text-white text-lg mt-8 bg-transparent border-2 pr-10 border-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-4 w-fit">
                         <p class="text-[#CD7F32] font-semibold">Send message</p>
                         <img class="arrow-one" src="{{ asset('images/icon-orange.svg') }}" class="">
@@ -142,4 +170,80 @@
 @endsection
 
 @section('script')
+    <script>
+        $(document).ready(function() {
+            $("#send-a-message").on("submit", function(event) {
+                event.preventDefault();
+                const button = $("#send-btn");
+                button.prop("disabled", true);
+                button.find('p').text("Submitting..");
+                jQuery.ajax({
+                    url: "/send-a-message",
+                    data: jQuery("#send-a-message").serialize(),
+                    type: "post",
+
+                    success: function(result) {
+                        toastr.success("Message submitted sucessfully!");
+                        button.prop("disabled", false);
+                        button.find('p').text("Send message..");
+                    },
+
+                    error: function(xhr, status, error) {
+                        button.prop("disabled", false);
+                        button.find('p').text("Send message..");
+                        if (error === "Unprocessable Content") {
+                            toastr.error('Invalid field(s)')
+                        } else {
+                            toastr.error("Something went wrong")
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropArea = document.getElementById("drop-area");
+            const inputFiled = document.getElementById("doc-upload");
+
+            dropArea.addEventListener("dragover", function(event) {
+                event.preventDefault();
+                dropArea.style.border = "2px dashed green";
+            });
+
+
+            dropArea.addEventListener("dragleave", function(event) {
+                dropArea.style.border = "2px dashed #E4E5E7";
+            });
+
+
+            dropArea.addEventListener("drop", function(event) {
+                event.preventDefault();
+                inputFiled.files = event.dataTransfer.files;
+                displayFileNames(inputFiled.files);
+            });
+
+            inputFiled.addEventListener("change", function(event) {
+                displayFileNames(inputFiled.files);
+            });
+
+            function displayFileNames(files) {
+            const fileNamesContainer = document.getElementById('fileNamesContainer');
+            fileNamesContainer.style.display = 'block';
+            fileNamesContainer.innerHTML = '';
+            document.getElementById('uploaded-title').style.display = "block";
+
+            for (let i = 0; i < files.length; i++) {
+                const fileName = files[i].name;
+                const fileNameElement = document.createElement('p');
+                fileNameElement.textContent = fileName;
+                fileNamesContainer.appendChild(fileNameElement);
+            }
+        }
+        });
+
+
+    </script>
 @endsection

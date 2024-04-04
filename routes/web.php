@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SendMail;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -38,3 +39,5 @@ Route::get('/about-us', function () {
 Route::get('/privacy-policy', function () {
     return view("privacy-policy");
 });
+
+Route::post('/send-a-message', [SendMail::class, 'SendMessage']);

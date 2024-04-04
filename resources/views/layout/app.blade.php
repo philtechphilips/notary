@@ -10,9 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mod-swiper.css') }}">
-    <link rel="icon" href="{{ asset("images/notary-logo.png")}}">
-    <link rel="stylesheet" href="{{ asset("build/assets/app-ed9e150d.css") }}">
+    <link rel="icon" href="{{ asset('images/notary-logo.png') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-ed9e150d.css') }}">
     @vite('resources/css/app.css')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
 </head>
 
 
@@ -60,18 +66,18 @@
     </script>
     {{-- Service Dropdown --}}
 
-          {{-- Toggle Mobile Navigation  --}}
-          <script>
-            const toggleButton = document.querySelectorAll('.menuButton');
-            const menu = document.getElementById('menu');
+    {{-- Toggle Mobile Navigation  --}}
+    <script>
+        const toggleButton = document.querySelectorAll('.menuButton');
+        const menu = document.getElementById('menu');
 
-            toggleButton.forEach(function(button) {
+        toggleButton.forEach(function(button) {
             button.addEventListener('click', function() {
                 menu.classList.toggle('translate-x-[500px]');
             })
         });
-        </script>
-        {{-- Toggle Mobile Navigation --}}
+    </script>
+    {{-- Toggle Mobile Navigation --}}
 
 
     <!-- Accordion Script -->
