@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mod-swiper.css') }}">
+    <link rel="icon" href="{{ asset("images/notary-logo.png")}}">
     <link rel="stylesheet" href="{{ asset("build/assets/app-ed9e150d.css") }}">
     @vite('resources/css/app.css')
 </head>

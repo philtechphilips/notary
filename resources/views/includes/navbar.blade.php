@@ -1,5 +1,8 @@
 <nav class="flex items-center justify-between md:px-20 px-5 md:py-1 py-4">
-    <img src="{{ asset('images/notary-logo.png') }}" alt="" class="w-16">
+    <a href="/">
+        <img src="{{ asset('images/notary-logo.png') }}" alt="" class="w-16">
+    </a>
+
 
     <div class="md:flex items-center gap-1 hidden">
         <a href="/services" class="text-lg font-medium text-[#1D1F21] hover:text-[#CD7F32]">Services</a>
@@ -18,7 +21,9 @@
 <nav id="menu"
     class="w-full p-5 md:hidden bg-gray-100 h-screen fixed top-0 left-0 translate-x-[500px] duration-[300ms] ease-in transform z-[1000]">
     <div class="flex items-center justify-between mb-20">
-        <img src="{{ asset('images/notary-logo.png') }}" alt="" class="w-16">
+        <a href="/">
+            <img src="{{ asset('images/notary-logo.png') }}" alt="" class="w-16">
+        </a>
 
         <div class="w-10 h-10 menuButton flex items-center justify-center">
             <i class="ri-close-line text-3xl"></i>
