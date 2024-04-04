@@ -36,7 +36,11 @@
         </li>
 
         <li>
-            <a href="/about-us" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2">Services</a>
+            <a href="/services" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2">Services</a>
+        </li>
+
+        <li>
+            <a href="/about-us" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2">About us</a>
         </li>
 
         {{-- <li>
@@ -45,7 +49,7 @@
     </li> --}}
 
         <li>
-            <a href="/projects" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2">Contacts</a>
+            <a href="/contacts" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2">Contacts</a>
 
         </li>
 
