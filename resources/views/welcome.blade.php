@@ -28,7 +28,13 @@
         <div class="bg-[#004D80] rounded-lg md:p-20 px-5 py-10  flex flex-col items-center gap-5">
             <h1 class="font-[Inter] text-white md:text-5xl text-3xl font-semibold">About Us</h1>
             <p class="text-white md:text-lg text-center">
-                At Notary Public Oshawa, we specialize in providing efficient and reliable document notarization services. Our experienced team offers fast and express services, ensuring your urgent needs are met with promptness and professionalism. We provide a range of services including notarizing documents, preparing affidavits, and acting as a Commissioner of Oath. As part of our commitment to convenience, we offer complimentary document printing. Whether you require E-notary services, Certified True Copy, Subsidy Applications, or Statutory Declarations, we are here to assist you with accuracy and precision. Trust Notary Public Oshawa for all your notarization needs, and experience our dedication to excellence firsthand.
+                At Notary Public Oshawa, we specialize in providing efficient and reliable document notarization services.
+                Our experienced team offers fast and express services, ensuring your urgent needs are met with promptness
+                and professionalism. We provide a range of services including notarizing documents, preparing affidavits,
+                and acting as a Commissioner of Oath. As part of our commitment to convenience, we offer complimentary
+                document printing. Whether you require E-notary services, Certified True Copy, Subsidy Applications, or
+                Statutory Declarations, we are here to assist you with accuracy and precision. Trust Notary Public Oshawa
+                for all your notarization needs, and experience our dedication to excellence firsthand.
             </p>
         </div>
     </section>
@@ -40,16 +46,18 @@
             <div class="md:w-[808px]">
                 <h1 class="text-5xl text-[#121212] font-semibold text-center md:text-left">Our Services</h1>
                 <p class="text-[#1D1F21] text-lg mt-2 text-center md:text-left">
-                    At Notary Public Oshawa, we specialize in providing comprehensive notarization services tailored to meet your legal document needs efficiently and effectively. Here's a glimpse of what we offer
+                    At Notary Public Oshawa, we specialize in providing comprehensive notarization services tailored to meet
+                    your legal document needs efficiently and effectively. Here's a glimpse of what we offer
                 </p>
             </div>
 
             <div class="md:flex items-center gap-6 hidden">
                 <a href=""
-                class="button text-white text-lg mt-12 bg-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-3 w-fit">
-                <p>View more</p>
-                <img class="arrow bg-[#E1B284] rounded-full p-2" src="{{ asset('images/arrow-right.svg') }}" class="">
-            </a>
+                    class="button text-white text-lg mt-12 bg-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-3 w-fit">
+                    <p>View more</p>
+                    <img class="arrow bg-[#E1B284] rounded-full p-2" src="{{ asset('images/arrow-right.svg') }}"
+                        class="">
+                </a>
             </div>
         </div>
         <div class="flex md:flex-row flex-col justify-between gap-10 mt-16">
@@ -60,7 +68,8 @@
                         E-Notary services
                     </h1>
                     <p class="text-[#53595F] mt-2 mb-4">
-                        Experience the convenience and efficiency of our E-Notary services. We ensure that your documents are notarized quickly and accurately.
+                        Experience the convenience and efficiency of our E-Notary services. We ensure that your documents
+                        are notarized quickly and accurately.
                     </p>
 
                 </div>
@@ -73,7 +82,8 @@
                         Notarization of documents
                     </h1>
                     <p class="text-[#53595F] mt-2 mb-4">
-                        Ensure the legal validity of your contracts and agreements with our expert notarization services in Oshawa.
+                        Ensure the legal validity of your contracts and agreements with our expert notarization services in
+                        Oshawa.
                     </p>
                 </div>
             </div>
@@ -86,7 +96,9 @@
                         Wills and estate planning
                     </h1>
                     <p class="text-[#53595F] mt-2 mb-4">
-                        Preparing a Will and prudent estate planning is recommended at any stage of your life to ensure your decisions will be carried out the way you want them to; especially when it comes to your family and loved ones.
+                        Preparing a Will and prudent estate planning is recommended at any stage of your life to ensure your
+                        decisions will be carried out the way you want them to; especially when it comes to your family and
+                        loved ones.
                     </p>
                 </div>
             </div>
@@ -97,25 +109,27 @@
     {{-- Why Choose us Section --}}
     <section class="bg-[#004D80] md:px-20 px-5 py-28">
         <div class="flex flex-col md:flex-row justify-between items-center md:items-end">
-            <div class="flex flex-col gap-2 md:w-[953px]">
+            <div class="flex flex-col gap-2 md:w-[800px] 2xl:w-[953px]">
                 <h1 class="text-white md:text-[60px] text-5xl font-semibold  md:text-left text-center">Why choose us</h1>
                 <p class="text-white md:text-[19px] font-light  md:text-left text-center">
-                    We pride ourselves on being your trusted partner for all your notary and legal service needs. With our commitment to excellence, attention to detail, and dedication to client satisfaction, we stand out as the preferred choice.
+                    We pride ourselves on being your trusted partner for all your notary and legal service needs. With our
+                    commitment to excellence, attention to detail, and dedication to client satisfaction, we stand out as
+                    the preferred choice.
                 </p>
             </div>
 
             <a href=""
                 class="button text-white text-lg mt-12 bg-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-3 w-fit">
                 <p>Book appointment</p>
-                <img class="arrow bg-[#E1B284] rounded-full p-2" src="{{ asset('images/arrow-right.svg') }}"
-                    class="">
+                <img class="arrow bg-[#E1B284] rounded-full p-2" src="{{ asset('images/arrow-right.svg') }}" class="">
             </a>
         </div>
 
         <div class="flex flex-col md:flex-row items-center gap-5 justify-between mt-20">
             <div class="flex flex-col text-white gap-3 w-[360px]">
                 <h4 class="text-2xl text-center md:text-left font-semibold">Experience and Expertise</h4>
-                <p class="text-center md:text-left font-light">Benefit from our years of industry experience and knowledgeable team of
+                <p class="text-center md:text-left font-light">Benefit from our years of industry experience and
+                    knowledgeable team of
                     notaries and legal professionals who ensure precision and accuracy in every service.</p>
             </div>
             <img src="{{ asset('images/Line 13.png') }}" class="h-4 md:h-full">
@@ -157,8 +171,9 @@
             </div>
 
             <div class="md:px-16 pl-16 pt-5 accordion-bottom">
-                <p class="text-lg font-light ">
-                    We provide notarization of documents, preparation of affidavits, act as a Commissioner of Oath, and offer free document printing with fast and express services.
+                <p class="text-lg font-light text-[#53595F]">
+                    We provide notarization of documents, preparation of affidavits, act as a Commissioner of Oath, and
+                    offer free document printing with fast and express services.
                 </p>
             </div>
         </div>
@@ -174,8 +189,9 @@
             </div>
 
             <div class="md:px-16 pl-16 pt-5 accordion-bottom">
-                <p class="text-lg font-light">
-                    We handle a variety of documents including affidavits, certified true copies, statutory declarations, travel consent letters, and more.
+                <p class="text-lg font-light text-[#53595F]">
+                    We handle a variety of documents including affidavits, certified true copies, statutory declarations,
+                    travel consent letters, and more.
                 </p>
             </div>
         </div>
@@ -191,7 +207,7 @@
             </div>
 
             <div class="md:px-16 pl-16 pt-5 accordion-bottom">
-                <p class="text-lg font-light">
+                <p class="text-lg font-light text-[#53595F]">
                     Yes, we provide E-notary services for electronic documents requiring notarization.
                 </p>
             </div>
@@ -208,8 +224,9 @@
             </div>
 
             <div class="md:px-16 pl-16 pt-5 accordion-bottom">
-                <p class="text-lg font-light">
-                    We offer fast and express services to ensure quick turnaround times, though it may vary based on document complexity and workload.
+                <p class="text-lg font-light text-[#53595F]">
+                    We offer fast and express services to ensure quick turnaround times, though it may vary based on
+                    document complexity and workload.
                 </p>
             </div>
         </div>
@@ -226,8 +243,9 @@
             </div>
 
             <div class="md:px-16 pl-16 pt-5 accordion-bottom">
-                <p class="text-lg font-light">
-                    Please bring the original document(s) needing notarization and valid identification such as a driver's license or passport.
+                <p class="text-lg font-light  text-[#53595F]">
+                    Please bring the original document(s) needing notarization and valid identification such as a driver's
+                    license or passport.
                 </p>
             </div>
         </div>

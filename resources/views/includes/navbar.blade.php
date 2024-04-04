@@ -1,5 +1,5 @@
-<nav class="flex items-center justify-between md:px-20 px-5 md:py-9 py-4">
-    <h1 class="uppercase font-bold text-xl font-[Inter]">Notary</h1>
+<nav class="flex items-center justify-between md:px-20 px-5 md:py-1 py-4">
+    <img src="{{ asset('images/notary-logo.png') }}" alt="" class="w-16">
 
     <div class="md:flex items-center gap-1 hidden">
         <a href="/services" class="text-lg font-medium text-[#1D1F21] hover:text-[#CD7F32]">Services</a>
@@ -13,43 +13,43 @@
     </ul>
 
     <a href="tel:+14169538776" class="text-lg text-[#CD7F32] font-medium hidden md:flex">+1 416-953-8776</a>
-    <i class="ri-menu-2-line text-[34px] flex md:hidden menuButton"></i>
+    <i class="ri-menu-2-line text-[28px] flex md:hidden menuButton"></i>
 </nav>
 <nav id="menu"
-class="w-full p-5 md:hidden bg-gray-100 h-screen fixed top-0 left-0 translate-x-[500px] duration-[300ms] ease-in transform z-[1000]">
-<div class="flex items-center justify-between mb-20">
-    <h1 class="uppercase font-bold text-xl font-[Inter]">Notary</h1>
+    class="w-full p-5 md:hidden bg-gray-100 h-screen fixed top-0 left-0 translate-x-[500px] duration-[300ms] ease-in transform z-[1000]">
+    <div class="flex items-center justify-between mb-20">
+        <img src="{{ asset('images/notary-logo.png') }}" alt="" class="w-16">
 
-    <div class="w-10 h-10 menuButton flex items-center justify-center">
-        <i class="ri-close-line text-3xl"></i>
+        <div class="w-10 h-10 menuButton flex items-center justify-center">
+            <i class="ri-close-line text-3xl"></i>
+        </div>
     </div>
-</div>
 
-<ul class="flex flex-col gap-10 items-center list">
-    <li>
-        <a href="/" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2"> Home</a>
-    </li>
+    <ul class="flex flex-col gap-12 items-center list">
+        <li>
+            <a href="/" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2"> Home</a>
+        </li>
 
-    <li>
-        <a href="/about-us" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2">Services</a>
-    </li>
+        <li>
+            <a href="/about-us" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2">Services</a>
+        </li>
 
-    <li>
+        {{-- <li>
         <a href="/services" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2">Team and Career</a>
 
-    </li>
+    </li> --}}
 
-    <li>
-        <a href="/projects" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2">Contacts</a>
+        <li>
+            <a href="/projects" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2">Contacts</a>
 
-    </li>
+        </li>
 
-    <li class="flex gap-2 items-center bg-[#CD7F32] rounded-lg px-6 py-3">
-        <a href="tel:+14169538776">
-            <p class="text-[#ffffff] font-medium md:text-xl">+1 416-953-8776</p>
-        </a>
-    </li>
-</ul>
+        <li class="flex gap-2 items-center bg-[#CD7F32] rounded-lg px-6 py-3">
+            <a href="tel:+14169538776">
+                <p class="text-[#ffffff] font-medium md:text-xl">+1 416-953-8776</p>
+            </a>
+        </li>
+    </ul>
 
 </nav>
 
