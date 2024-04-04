@@ -47,7 +47,6 @@
                 </div>
             </div>
 
-
             <div class="bg-[#F1F2F3] rounded-lg  md:w-[350px] 2xl:w-[400px]">
                 <img src="{{ asset('images/wills.png') }}" class="rounded-t-lg w-full">
                 <div class="mt-6 px-5 pb-8">
