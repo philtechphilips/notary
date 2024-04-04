@@ -13,10 +13,13 @@
                 of documents to document handling services. Our expert ensures seamless transactions, in-person or online.
             </p>
 
-            <a href=""
+            <a href="/contacts"
                 class="button text-white text-lg mt-12 bg-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-3 w-fit">
                 <p>Book appointment</p>
-                <img class="arrow bg-[#E1B284] rounded-full p-2" src="{{ asset('images/arrow-right.svg') }}" class="">
+                <div class="bg-[#E1B284] primary-button rounded-full p-2 h-10 w-10 flex items-center justify-center">
+                    <img class="arrow-one" src="{{ asset('images/arrow-right.svg') }}">
+                    <img class="arrow-two" src="{{ asset('images/arrow-right.svg') }}" class="">
+                </div>
             </a>
         </div>
         <div class="w-full h-full bg-black bg-opacity-50 absolute top-0 left-0"></div>
@@ -52,11 +55,13 @@
             </div>
 
             <div class="md:flex items-center gap-6 hidden">
-                <a href=""
+                <a href="/services"
                     class="button text-white text-lg mt-12 bg-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-3 w-fit">
                     <p>View more</p>
-                    <img class="arrow bg-[#E1B284] rounded-full p-2" src="{{ asset('images/arrow-right.svg') }}"
-                        class="">
+                    <div class="bg-[#E1B284] primary-button rounded-full p-2 h-10 w-10 flex items-center justify-center">
+                        <img class="arrow-one" src="{{ asset('images/arrow-right.svg') }}">
+                        <img class="arrow-two" src="{{ asset('images/arrow-right.svg') }}" class="">
+                    </div>
                 </a>
             </div>
         </div>
@@ -118,10 +123,13 @@
                 </p>
             </div>
 
-            <a href=""
+            <a href="/contacts"
                 class="button text-white text-lg mt-12 bg-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-3 w-fit">
                 <p>Book appointment</p>
-                <img class="arrow bg-[#E1B284] rounded-full p-2" src="{{ asset('images/arrow-right.svg') }}" class="">
+                <div class="bg-[#E1B284] primary-button rounded-full p-2 h-10 w-10 flex items-center justify-center">
+                    <img class="arrow-one" src="{{ asset('images/arrow-right.svg') }}">
+                    <img class="arrow-two" src="{{ asset('images/arrow-right.svg') }}" class="">
+                </div>
             </a>
         </div>
 

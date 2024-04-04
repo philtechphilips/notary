@@ -44,34 +44,73 @@ body{
     animation: fade 0.4s;
 }
 
+
+.buttons {
+    position: relative;
+    overflow: hidden;
+}
+
+.buttons .arrow-one {
+    position: absolute;
+    bottom: 22%;
+    right: 7%;
+    transition: bottom 0.3s ease;
+}
+
+.buttons:hover .arrow-one {
+    bottom: 100%;
+    right: 7%;
+}
+
+
+.buttons .arrow-two {
+    position: absolute;
+    bottom: -100%;
+    right: 7%;
+    transition: bottom 0.3s ease;
+}
+
+.buttons:hover .arrow-two {
+    bottom: 22%;
+    right: 7%;
+}
+
+
+
+
+.primary-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.button .arrow-one {
+    position: absolute;
+    bottom: 22%;
+    right: 25% !important;
+    transition: bottom 0.3s ease;
+}
+
+.button:hover .arrow-one {
+    bottom: 100%;
+    right: 25% !important;
+}
+
+
+.button .arrow-two {
+    position: absolute;
+    bottom: -100%;
+    right: 25% !important;
+    transition: bottom 0.3s ease;
+}
+
+.button:hover .arrow-two {
+    bottom: 22%;
+    right: 25% !important;
+}
+
 @media (max-width: 720px) {
     .accordion.active .accordion-bottom {
         padding: 10px 10px;
     }
 }
-/*
-.button {
-    position: relative;
-}
 
-.arrow {
-    bottom: 0px;
-    transition: transform 0.3s ease;
-}
-
-.button:hover .arrow {
-    transform: translateY(-100%);
-    animation: returnFromTop 3s ease forwards;
-}
-
-@keyframes returnFromTop {
-    0% {
-        transform: translateY(-100%);
-    }
-    50% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-} */

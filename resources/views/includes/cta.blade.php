@@ -8,10 +8,13 @@
             needs. With a focus on efficiency and accuracy, our experienced team ensures your documents are notarized
             correctly and your legal needs addressed promptly.
         </p>
-        <a href=""
-            class="button text-white text-lg bg-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-3 w-fit">
-            <p>Book appointment</p>
-            <img class="arrow bg-[#E1B284] rounded-full p-2" src="{{ asset('images/arrow-right.svg') }}" class="">
-        </a>
+        <a href="/contacts"
+                class="button text-white text-lg mt-12 bg-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-3 w-fit">
+                <p>Book appointment</p>
+                <div class="bg-[#E1B284] primary-button rounded-full p-2 h-10 w-10 flex items-center justify-center">
+                    <img class="arrow-one" src="{{ asset('images/arrow-right.svg') }}">
+                    <img class="arrow-two" src="{{ asset('images/arrow-right.svg') }}" class="">
+                </div>
+            </a>
     </div>
 </section>

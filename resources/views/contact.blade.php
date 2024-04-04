@@ -73,8 +73,7 @@
                 <form class="bg-white md:p-8 py-8 px-4 rounded-lg w-full">
                     <h1 class="text-[#1D1F21] text-2xl font-semibold">Online notorization</h1>
 
-
-                    <label for="doc-upload">
+                    <label for="doc-upload" class="cursor-pointer">
                         <input type="file" name="" id="doc-upload" hidden>
                         <div
                             class="border-2 border-[#E4E5E7] bg-[#F9F9F9] border-dashed rounded-lg gap-6 my-8 flex flex-col items-center justify-center py-28">
@@ -92,10 +91,10 @@
                         </div>
                     </label>
 
-                    <button type="submit"
-                        class="button text-white text-lg mt-8 bg-transparent border-2 border-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-4 w-fit">
+                    <button type="submit" class="buttons text-white text-lg mt-8 bg-transparent border-2 border-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-4 pr-10 w-fit">
                         <p class="text-[#CD7F32] font-semibold">Send document</p>
-                        <img class="arrow" src="{{ asset('images/icon-orange.svg') }}" class="">
+                        <img class="arrow-one" src="{{ asset('images/icon-orange.svg') }}" class="">
+                        <img class="arrow-two" src="{{ asset('images/icon-orange.svg') }}" class="">
                     </button>
                 </form>
             </div>
@@ -131,9 +130,10 @@
                     </div>
 
                     <button type="submit"
-                        class="button text-white text-lg mt-8 bg-transparent border-2 border-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-4 w-fit">
+                        class="buttons text-white text-lg mt-8 bg-transparent border-2 pr-10 border-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-4 w-fit">
                         <p class="text-[#CD7F32] font-semibold">Send message</p>
-                        <img class="arrow" src="{{ asset('images/icon-orange.svg') }}" class="">
+                        <img class="arrow-one" src="{{ asset('images/icon-orange.svg') }}" class="">
+                        <img class="arrow-two" src="{{ asset('images/icon-orange.svg') }}" class="">
                     </button>
                 </form>
             </div>
