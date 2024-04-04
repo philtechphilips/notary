@@ -150,32 +150,85 @@
             <div class="flex items-start justify-between accordion-top">
                 <div class="flex items-center gap-10">
                     <h2 class="text-lg">01</h2>
-                    <h2 class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h2>
+                    <h2 class="text-lg">What services does Notary Public Oshawa offer?</h2>
                 </div>
 
                 <img src="{{ asset('images/arrow-down.svg') }}" class="cursor-pointer">
             </div>
 
             <div class="md:px-16 pl-16 pt-5 accordion-bottom">
-                <p class="text-lg font-light ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
-                    blanditiis veritatis quae velit et sit sapiente consequatur at tenetur ipsam. Illum at commodi natus,
-                    recusandae earum minima ipsam corrupti tempore.</p>
+                <p class="text-lg font-light ">
+                    We provide notarization of documents, preparation of affidavits, act as a Commissioner of Oath, and offer free document printing with fast and express services.
+                </p>
             </div>
         </div>
+
         <div class="border-b border-b-[#C9CCCF] mt-16 pb-12 accordion">
             <div class="flex items-start justify-between accordion-top">
                 <div class="flex items-center gap-10">
                     <h2 class="text-lg">02</h2>
-                    <h2 class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</h2>
+                    <h2 class="text-lg">What types of documents do you handle?</h2>
                 </div>
 
                 <img src="{{ asset('images/arrow-down.svg') }}" class="cursor-pointer">
             </div>
 
             <div class="md:px-16 pl-16 pt-5 accordion-bottom">
-                <p class="text-lg font-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
-                    blanditiis veritatis quae velit et sit sapiente consequatur at tenetur ipsam. Illum at commodi natus,
-                    recusandae earum minima ipsam corrupti tempore.</p>
+                <p class="text-lg font-light">
+                    We handle a variety of documents including affidavits, certified true copies, statutory declarations, travel consent letters, and more.
+                </p>
+            </div>
+        </div>
+
+        <div class="border-b border-b-[#C9CCCF] mt-16 pb-12 accordion">
+            <div class="flex items-start justify-between accordion-top">
+                <div class="flex items-center gap-10">
+                    <h2 class="text-lg">03</h2>
+                    <h2 class="text-lg">Do you offer electronic notarization services?</h2>
+                </div>
+
+                <img src="{{ asset('images/arrow-down.svg') }}" class="cursor-pointer">
+            </div>
+
+            <div class="md:px-16 pl-16 pt-5 accordion-bottom">
+                <p class="text-lg font-light">
+                    Yes, we provide E-notary services for electronic documents requiring notarization.
+                </p>
+            </div>
+        </div>
+
+        <div class="border-b border-b-[#C9CCCF] mt-16 pb-12 accordion">
+            <div class="flex items-start justify-between accordion-top">
+                <div class="flex items-center gap-10">
+                    <h2 class="text-lg">04</h2>
+                    <h2 class="text-lg">How quickly can I get my documents notarized?</h2>
+                </div>
+
+                <img src="{{ asset('images/arrow-down.svg') }}" class="cursor-pointer">
+            </div>
+
+            <div class="md:px-16 pl-16 pt-5 accordion-bottom">
+                <p class="text-lg font-light">
+                    We offer fast and express services to ensure quick turnaround times, though it may vary based on document complexity and workload.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="border-b border-b-[#C9CCCF] mt-16 pb-12 accordion">
+            <div class="flex items-start justify-between accordion-top">
+                <div class="flex items-center gap-10">
+                    <h2 class="text-lg">05</h2>
+                    <h2 class="text-lg">What should I bring when visiting your office?</h2>
+                </div>
+
+                <img src="{{ asset('images/arrow-down.svg') }}" class="cursor-pointer">
+            </div>
+
+            <div class="md:px-16 pl-16 pt-5 accordion-bottom">
+                <p class="text-lg font-light">
+                    Please bring the original document(s) needing notarization and valid identification such as a driver's license or passport.
+                </p>
             </div>
         </div>
     </section>
