@@ -34,3 +34,7 @@ Route::get('/contacts', function () {
 Route::get('/about-us', function () {
     return view("about");
 });
+
+Route::get('/privacy-policy', function () {
+    return view("privacy-policy");
+});

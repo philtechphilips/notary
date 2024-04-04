@@ -1,6 +1,6 @@
 <section class="w-full bg-gray-50 py-28">
     <div class="flex flex-col md:flex-row items-end justify-between md:px-20 px-5">
-        <h1 class="font-[Inter] md:text-6xl text-4xl md:w-[527px] font-semibold">
+        <h1 class="font-[Inter] md:text-6xl text-4xl md:w-[527px] font-semibold text-center md:text-left">
             What our clients are saying
         </h1>
     </div>

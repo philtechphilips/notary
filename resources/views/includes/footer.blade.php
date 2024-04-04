@@ -18,15 +18,15 @@
         </div>
 
         <div class="flex flex-col gap-4 w-fit">
-            <h1 class="text-[#AEB2B7]">Policies</h1>
+            <h1 class="text-[#AEB2B7] hover:text-[#CD7F32]">Policies</h1>
            <ul class="flex flex-col gap-[6px]">
-            <li class="text-[#FFFFFF] tex-lg"><a href="/privacy-policy">Privacy Policy</a></li>
+            <li class="text-[#FFFFFF] hover:text-[#CD7F32] tex-lg"><a href="/privacy-policy">Privacy Policy</a></li>
            </ul>
         </div>
 
         <div class="flex flex-col gap-4 w-fit">
             <h1 class="text-[#AEB2B7]">Socials</h1>
-            <a class="text-[#FFFFFF] tex-lg flex items-center" href="">
+            <a class="text-[#FFFFFF] hover:text-[#CD7F32] tex-lg flex items-center" href="">
             <p>Instagram</p>
             <img src="{{ asset("images/arrow-up-right-24.svg") }}">
             </a>

@@ -3,7 +3,7 @@
         <h1
             class="text-white font-semibold md:text-5xl text-4xl text-center md:leading-[70px] leading-[48px] font-[Inter]">
             Let’s assist you with your notary and legal needs</h1>
-        <p class="text-white mt-6 mb-12 text-center px-16">
+        <p class="text-white mt-6 mb-12 text-center md:px-16">
             We're committed to delivering prompt, reliable, and professional notary and legal services tailored to your
             needs. With a focus on efficiency and accuracy, our experienced team ensures your documents are notarized
             correctly and your legal needs addressed promptly.
