@@ -3,67 +3,109 @@
         <h1 class="font-[Inter] md:text-6xl text-4xl md:w-[527px] font-semibold">
             What our clients are saying
         </h1>
-        <a href="" class="button text-[#CD7F32] flex items-center gap-2  w-fit">
-            <p>Read more</p>
-            <img class="arrow" src="{{ asset('images/arrow-right-orange.svg') }}" class="">
-        </a>
     </div>
     <div class="md:pl-20 md:pr-5 px-5">
         <div class="swiper-2">
             <div class="swiper-wrapper flex mt-16 gap-6">
-                <div class="bg-[#F1F2F3] px-5 pt-24 rounded-lg border w-[300px] md:w-[482px] border-[#E4E5E7] swiper-slide">
-                    <p>Solas law office is the definition of that quintessential law firm. One with a heart of gold and
+                <div
+                    class="bg-[#F1F2F3] px-5 pt-24 rounded-lg border w-[300px] h-[352px] flex flex-col justify-end md:w-[482px] border-[#E4E5E7] swiper-slide">
+                    <p>
+                        Solas law office is the definition of that quintessential law firm. One with a heart of gold and
                         the right brains and attitude to see any matter through. The Principal Sola himself is a
-                        hands-on person and very astute. I will recommend them over and again.</p>
+                        hands-on person and very astute. I will recommend them over and again.
+                    </p>
                     <div class="flex items-center justify-between mt-10 mb-8">
                         <div class="flex items-center gap-4">
-                            <img src="{{ asset('images/testimonial-image.png') }}">
                             <p style="text-[#1D1F21]">Mudiaga Akpocha</p>
                         </div>
                         <img src="{{ asset('images/rating.png') }}" alt="">
                     </div>
                 </div>
 
-                <div class="bg-[#F1F2F3] px-5 pt-24 rounded-lg border w-[300px] md:w-[482px] border-[#E4E5E7] swiper-slide">
-                    <p>Solas law office is the definition of that quintessential law firm. One with a heart of gold and
-                        the right brains and attitude to see any matter through. The Principal Sola himself is a
-                        hands-on person and very astute. I will recommend them over and again.</p>
+                <div
+                    class="bg-[#F1F2F3] px-5 pt-24 rounded-lg border w-[300px] h-[352px] flex flex-col justify-end md:w-[482px] border-[#E4E5E7] swiper-slide">
+                    <p>
+                        I needed to notarize my OSAP documents. The process was smooth and professional. I will always
+                        always recommend Notary public oshawa. He is an amazing Lawyer.
+                    </p>
                     <div class="flex items-center justify-between mt-10 mb-8">
                         <div class="flex items-center gap-4">
-                            <img src="{{ asset('images/testimonial-image.png') }}">
-                            <p style="text-[#1D1F21]">Mudiaga Akpocha</p>
+                            <p style="text-[#1D1F21]">Law Hacks</p>
                         </div>
                         <img src="{{ asset('images/rating.png') }}" alt="">
                     </div>
                 </div>
 
-
-                <div class="bg-[#F1F2F3] px-5 pt-24 rounded-lg border w-[300px] md:w-[482px] border-[#E4E5E7] swiper-slide">
-                    <p>Solas law office is the definition of that quintessential law firm. One with a heart of gold and
-                        the right brains and attitude to see any matter through. The Principal Sola himself is a
-                        hands-on person and very astute. I will recommend them over and again.</p>
+                <div
+                    class="bg-[#F1F2F3] px-5 pt-24 rounded-lg border w-[300px] h-[352px] flex flex-col justify-end md:w-[482px] border-[#E4E5E7] swiper-slide">
+                    <p>
+                        Professional, respectful and responsive. I called and was attended to in good time and the
+                        service I received was top notch. Best Notary in Oshawa.
+                    </p>
                     <div class="flex items-center justify-between mt-10 mb-8">
                         <div class="flex items-center gap-4">
-                            <img src="{{ asset('images/testimonial-image.png') }}">
-                            <p style="text-[#1D1F21]">Mudiaga Akpocha</p>
+                            <p style="text-[#1D1F21]">slpcsolicitor</p>
                         </div>
                         <img src="{{ asset('images/rating.png') }}" alt="">
                     </div>
                 </div>
 
-
-                <div class="bg-[#F1F2F3] px-5 pt-24 rounded-lg border w-[300px] md:w-[482px] border-[#E4E5E7] swiper-slide">
-                    <p>Solas law office is the definition of that quintessential law firm. One with a heart of gold and
-                        the right brains and attitude to see any matter through. The Principal Sola himself is a
-                        hands-on person and very astute. I will recommend them over and again.</p>
+                <div
+                    class="bg-[#F1F2F3] px-5 pt-24 rounded-lg border w-[300px] h-[352px] flex flex-col justify-end md:w-[482px] border-[#E4E5E7] swiper-slide">
+                    <p>
+                        I needed to notarize my documents urgentlyand i had it done in time and he was very
+                        professional.
+                    </p>
                     <div class="flex items-center justify-between mt-10 mb-8">
                         <div class="flex items-center gap-4">
-                            <img src="{{ asset('images/testimonial-image.png') }}">
-                            <p style="text-[#1D1F21]">Mudiaga Akpocha</p>
+                            <p style="text-[#1D1F21]">Uche Ihueze</p>
                         </div>
                         <img src="{{ asset('images/rating.png') }}" alt="">
                     </div>
                 </div>
+
+                <div
+                    class="bg-[#F1F2F3] px-5 pt-24 rounded-lg border w-[300px] h-[352px] flex flex-col justify-end md:w-[482px] border-[#E4E5E7] swiper-slide">
+                    <p>
+                        My first time of using Notary Public Oshawa, they were fast and paid attention to details. I
+                        would recommend them.
+                    </p>
+                    <div class="flex items-center justify-between mt-10 mb-8">
+                        <div class="flex items-center gap-4">
+                            <p style="text-[#1D1F21]">Adeniran Faforiji</p>
+                        </div>
+                        <img src="{{ asset('images/rating.png') }}" alt="">
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#F1F2F3] px-5 pt-24 rounded-lg border w-[300px] h-[352px] flex flex-col justify-end md:w-[482px] border-[#E4E5E7] swiper-slide">
+                    <p>
+                        A very transparent and professional law firm. True to practice, competent and affordable. I will
+                        recommend any day.
+                    </p>
+                    <div class="flex items-center justify-between mt-10 mb-8">
+                        <div class="flex items-center gap-4">
+                            <p style="text-[#1D1F21]">Timothy Adaka</p>
+                        </div>
+                        <img src="{{ asset('images/rating.png') }}" alt="">
+                    </div>
+                </div>
+
+                <div
+                    class="bg-[#F1F2F3] px-5 pt-24 rounded-lg border w-[300px] h-[352px] flex flex-col justify-end md:w-[482px] border-[#E4E5E7] swiper-slide">
+                    <p>
+                        Very professional and responsive. They went above and beyond my expectations. I would recommend
+                        them again and again!
+                    </p>
+                    <div class="flex items-center justify-between mt-10 mb-8">
+                        <div class="flex items-center gap-4">
+                            <p style="text-[#1D1F21]">Dayo Aluko</p>
+                        </div>
+                        <img src="{{ asset('images/rating.png') }}" alt="">
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

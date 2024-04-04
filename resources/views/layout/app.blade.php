@@ -5,14 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ getenv('APP_NAME') }} | </title>
+    <title>Notary Public Oshawa - Notary And Legal Services </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mod-swiper.css') }}">
     <link rel="stylesheet" href="{{ asset("build/assets/app-ed9e150d.css") }}">
     @vite('resources/css/app.css')
-
 </head>
 
 
