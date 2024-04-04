@@ -54,87 +54,90 @@
 </nav>
 
 <div id="service_dropdown"
-    class="w-full gap-20 service-hidden bg-white px-12 py-10 hidden md:flex justify-center items-start absolute top-[105px] z-[1000]">
+    class="w-full md:px-20 gap-20 service-hidden bg-white py-10  md:flex items-start absolute top-[67px] z-[1000]">
     <div class="w-[284px]">
-        <h1 class="text-[#121212] text-4xl font-[Inter] font-medium">Services</h1>
-        <p class="mt-2 text-[#5F666D]">Lorem ipsum dolor sit amet consectetur. Morbi urna orci integer vel. Senectus leo
-            orci cras pulvinar donec viverra feugiat.</p>
+        <h1 class="text-[#121212] text-3xl font-[Inter] font-medium">Notary Public Oshawa</h1>
+        <p class="mt-2 text-[#1D1F21]">
+            Trust us with your notarization needs, and experience unparalleled convenience and reliability.
+        </p>
     </div>
 
-    <div class="w-[608px]">
-        <h1 class="text-[#5F666D]">Notary Public</h1>
-        <div class="flex gap-12">
-            <ul class="mt-4 flex flex-col gap-2 w-full">
-                <li>
-                    <a href="">E-notary services</a>
-                </li>
-                <li>
-                    <a href="">General notarisation</a>
+    <div class="w-full">
+        <div class="flex justify-between w-full">
+            <ul class="mt-4 flex flex-col gap-4 w-full">
+                <li class="text-[#53595F]">
+                    E-notary services
                 </li>
 
-                <li>
-                    <a href="">Loan notarisation</a>
+                <li class="text-[#53595F]">
+                    Notarization of documents
                 </li>
 
-                <li>
-                    <a href="">Notary signing services</a>
+                <li class="text-[#53595F]">
+                    Affidavit preparation
                 </li>
 
-                <li>
-                    <a href="">Criminal Record Checks</a>
+                <li class="text-[#53595F]">
+                    Commissioner of oaths
                 </li>
 
-                <li>
-                    <a href="">Digital Document</a>
+                <li class="text-[#53595F]">
+                    Free document printing
                 </li>
             </ul>
 
-            <ul class="mt-4 flex flex-col gap-2 w-full">
-                <li>
-                    <a href="">Finance Documents</a>
-                </li>
-                <li>
-                    <a href="">In-Person Notary</a>
+            <ul class="mt-4 flex flex-col gap-4 w-full">
+                <li class="text-[#53595F]">
+                    Proof of loss document
                 </li>
 
-                <li>
-                    <a href="">Mortgage Documents</a>
+                <li class="text-[#53595F]">
+                    Subsidy applications
                 </li>
 
-                <li>
-                    <a href="">Online Notarization</a>
+                <li class="text-[#53595F]">
+                    Common law statutory declarations
                 </li>
 
-                <li>
-                    <a href="">Online Notary Service</a>
+                <li class="text-[#53595F]">
+                    Custody declaration
                 </li>
 
-                <li>
-                    <a href="">Online Service</a>
+                <li class="text-[#53595F]">
+                    Letter of invitations
                 </li>
             </ul>
 
-            <ul class="mt-4 flex flex-col gap-2 w-full">
-                <li>
-                    <a href="">Remote Online Notary</a>
-                </li>
-                <li>
-                    <a href="">Tax Documents</a>
+
+            <ul class="mt-4 flex flex-col gap-4 w-full">
+                <li class="text-[#53595F]">
+                    Statutory declarations of marital status
                 </li>
 
-                <li>
-                    <a href="">Prompt and Express Services</a>
+                <li class="text-[#53595F]">
+                    Statutory declaration to change name
                 </li>
 
-                <li>
-                    <a href="">Legal Services</a>
+                <li class="text-[#53595F]">
+                    Travel consent letter
+                </li>
+
+                <li class="text-[#53595F]">
+                    Witnessing signatures
+                </li>
+
+                <li class="text-[#53595F]">
+                    Certified true copies
                 </li>
             </ul>
+
+
+            <ul class="mt-4 flex flex-col gap-4 w-full">
+                <li class="text-[#53595F]">
+                    Wills and estate planning
+                </li>
+            </ul>
+
         </div>
-    </div>
-
-    <div class="w-fit">
-        <h1 class="text-[#5F666D]">Commissioner of Oath</h1>
-        <p>Barrister and Solicitor</p>
     </div>
 </div>
