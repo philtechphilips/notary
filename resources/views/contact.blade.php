@@ -246,39 +246,39 @@
     </script>
 
 
-<script>
-    $(document).ready(function() {
-        $("#uploadForm").on("submit", function(event) {
-            event.preventDefault();
+    <script>
+        $(document).ready(function() {
+            $("#uploadForm").on("submit", function(event) {
+                event.preventDefault();
 
-            const button = $("#upload-btn");
-            button.prop("disabled", true);
-            button.find('p').text("Uploading...");
-    
-            jQuery.ajax({
-                url: "/online-upload",
-                data: new FormData(this),
-                type: "post",
-                contentType: false,
-                processData: false,
+                const button = $("#upload-btn");
+                button.prop("disabled", true);
+                button.find('p').text("Uploading...");
 
-                success: function(result) {
-                    toastr.success("Message submitted sucessfully!");
-                    button.prop("disabled", false);
-                    button.find('p').text("Send document");
-                },
+                jQuery.ajax({
+                    url: "/online-upload",
+                    data: new FormData(this),
+                    type: "post",
+                    contentType: false,
+                    processData: false,
 
-                error: function(xhr, status, error) {
-                    button.prop("disabled", false);
-                    button.find('p').text("Send document");
-                    if (error === "Unprocessable Content") {
-                        toastr.error('Invalid field(s)');
-                    } else {
-                        toastr.error("Something went wrong");
+                    success: function(result) {
+                        toastr.success("Message submitted sucessfully!");
+                        button.prop("disabled", false);
+                        button.find('p').text("Send document");
+                    },
+
+                    error: function(xhr, status, error) {
+                        button.prop("disabled", false);
+                        button.find('p').text("Send document");
+                        if (error === "Unprocessable Content") {
+                            toastr.error('Invalid field(s)');
+                        } else {
+                            toastr.error("Something went wrong");
+                        }
                     }
-                }
+                });
             });
         });
-    });
-</script>
+    </script>
 @endsection
