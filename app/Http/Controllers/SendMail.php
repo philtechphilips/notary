@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\OnlineUpload;
 use App\Mail\SendAMessage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -27,6 +28,26 @@ class SendMail extends Controller
         $messages = $request->messages;
 
         Mail::to( getenv('MAIL_TO'))->send(new SendAMessage($name, $contact, $email, $service, $messages));
+        return response()->json(["messages" => "message sent sucessfully"]);
+    }
+
+    public function OnlineUpload(Request $request){
+        $request->validate([
+            'file' => 'required|file|max:5120',
+        ]);
+
+        $fileName = $request->file;
+
+        $updatedFileName = time().'.'.$fileName->getClientOriginalExtension();
+
+        $request->file->move("files", $updatedFileName);
+
+        $request->file = $updatedFileName;
+
+        Log::info($updatedFileName);
+
+        Mail::to(getenv('MAIL_TO'))->send(new OnlineUpload(public_path("files/$updatedFileName")));
+
         return response()->json(["messages" => "message sent sucessfully"]);
     }
 }

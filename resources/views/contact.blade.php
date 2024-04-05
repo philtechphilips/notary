@@ -70,12 +70,13 @@
     <section class="w-full md:px-20 px-5 mb-28">
         <div class="w-full flex md:flex-row flex-col gap-12">
             <div class="md:w-1/2">
-                <form class="bg-white md:p-8 py-8 px-4 rounded-lg w-full" method="POST" action="/online-upload">
+                <form id="uploadForm" class="bg-white md:p-8 py-8 px-4 rounded-lg w-full" method="POST"
+                    action="/online-upload" enctype="multipart/form-data">
                     @csrf
                     <h1 class="text-[#1D1F21] text-2xl font-semibold">Online notorization</h1>
 
                     <label for="doc-upload" class="cursor-pointer">
-                        <input type="file" multiple name="" id="doc-upload" hidden>
+                        <input type="file" name="file" id="doc-upload" hidden>
                         <div id="drop-area"
                             class="border-2 border-[#E4E5E7] bg-[#F9F9F9] border-dashed rounded-lg gap-6 my-8 flex flex-col items-center justify-center py-28">
                             <h1 class="text-[#121212]">Upload your document</h1>
@@ -99,7 +100,7 @@
                         </div>
                     </div>
 
-                    <button type="submit"
+                    <button id="upload-btn" type="submit"
                         class="buttons text-white text-lg mt-8 bg-transparent border-2 border-[#CD7F32] rounded-full z-[100] flex items-center gap-2 py-[6px] px-4 pr-10 w-fit">
                         <p class="text-[#CD7F32] font-semibold">Send document</p>
                         <img class="arrow-one" src="{{ asset('images/icon-orange.svg') }}" class="">
@@ -202,7 +203,6 @@
         });
     </script>
 
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const dropArea = document.getElementById("drop-area");
@@ -230,20 +230,55 @@
             });
 
             function displayFileNames(files) {
-            const fileNamesContainer = document.getElementById('fileNamesContainer');
-            fileNamesContainer.style.display = 'block';
-            fileNamesContainer.innerHTML = '';
-            document.getElementById('uploaded-title').style.display = "block";
+                const fileNamesContainer = document.getElementById('fileNamesContainer');
+                fileNamesContainer.style.display = 'block';
+                fileNamesContainer.innerHTML = '';
+                document.getElementById('uploaded-title').style.display = "block";
 
-            for (let i = 0; i < files.length; i++) {
-                const fileName = files[i].name;
-                const fileNameElement = document.createElement('p');
-                fileNameElement.textContent = fileName;
-                fileNamesContainer.appendChild(fileNameElement);
+                for (let i = 0; i < files.length; i++) {
+                    const fileName = files[i].name;
+                    const fileNameElement = document.createElement('p');
+                    fileNameElement.textContent = fileName;
+                    fileNamesContainer.appendChild(fileNameElement);
+                }
             }
-        }
         });
-
-
     </script>
+
+
+<script>
+    $(document).ready(function() {
+        $("#uploadForm").on("submit", function(event) {
+            event.preventDefault();
+
+            const button = $("#upload-btn");
+            button.prop("disabled", true);
+            button.find('p').text("Uploading...");
+    
+            jQuery.ajax({
+                url: "/online-upload",
+                data: new FormData(this),
+                type: "post",
+                contentType: false,
+                processData: false,
+
+                success: function(result) {
+                    toastr.success("Message submitted sucessfully!");
+                    button.prop("disabled", false);
+                    button.find('p').text("Send document");
+                },
+
+                error: function(xhr, status, error) {
+                    button.prop("disabled", false);
+                    button.find('p').text("Send document");
+                    if (error === "Unprocessable Content") {
+                        toastr.error('Invalid field(s)');
+                    } else {
+                        toastr.error("Something went wrong");
+                    }
+                }
+            });
+        });
+    });
+</script>
 @endsection

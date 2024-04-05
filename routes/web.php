@@ -41,3 +41,4 @@ Route::get('/privacy-policy', function () {
 });
 
 Route::post('/send-a-message', [SendMail::class, 'SendMessage']);
+Route::post('/online-upload', [SendMail::class, 'OnlineUpload']);
