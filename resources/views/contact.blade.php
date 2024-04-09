@@ -272,7 +272,7 @@
                         button.prop("disabled", false);
                         button.find('p').text("Send document");
                         if (error === "Unprocessable Content") {
-                            toastr.error('Invalid field(s)');
+                            toastr.error('Invalid file');
                         } else {
                             toastr.error("Something went wrong");
                         }

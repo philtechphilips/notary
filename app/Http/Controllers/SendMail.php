@@ -31,18 +31,20 @@ class SendMail extends Controller
 
     public function OnlineUpload(Request $request){
         $request->validate([
-            'file' => 'required|file|max:5120',
+            'file' => 'required|file|max:5120|mimes:pdf,doc,docx,jpg,png,jpeg',
         ]);
 
         $fileName = $request->file;
 
         $updatedFileName = time().'.'.$fileName->getClientOriginalExtension();
 
-        $request->file->move("files", $updatedFileName);
+        $request->file->move(public_path('files'), $updatedFileName);
 
         $request->file = $updatedFileName;
 
         Mail::to(getenv('MAIL_TO'))->send(new OnlineUpload(public_path("files/$updatedFileName")));
+        
+        unlink(public_path("files/$updatedFileName"));
 
         return response()->json(["messages" => "message sent sucessfully"]);
     }
