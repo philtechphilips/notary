@@ -19,8 +19,6 @@ class SendMail extends Controller
             'messages' => 'required|string'
         ]);
 
-        Log::info($validatedData);
-
         $name = $request->name;
         $contact = $request->contact;
         $email = $request->email;
@@ -43,8 +41,6 @@ class SendMail extends Controller
         $request->file->move("files", $updatedFileName);
 
         $request->file = $updatedFileName;
-
-        Log::info($updatedFileName);
 
         Mail::to(getenv('MAIL_TO'))->send(new OnlineUpload(public_path("files/$updatedFileName")));
 

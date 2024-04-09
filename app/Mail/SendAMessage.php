@@ -32,8 +32,8 @@ class SendAMessage extends Mailable
      * @return $this
      */
     public function build()
-    {
-        return $this->from($this->email, $this->name)
+    { 
+        return $this->from(getenv('MAIL_FROM_ADDRESS'), getenv('APP_NAME'))
                     ->subject('Notary message from ' . $this->name)
                     ->view('mails.send-a-message');
     }
